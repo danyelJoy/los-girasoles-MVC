@@ -1,0 +1,385 @@
+extends layout
+
+block content
+
+  .fh5co-loader
+  #page
+    nav.fh5co-nav(role='navigation')
+      .container
+        .row
+          .col-md-3.col-xs-2
+            #fh5co-logo
+              a(href='index.html') Shop.
+          .col-md-6.col-xs-6.text-center.menu-1
+            ul
+              li.has-dropdown
+                a(href='product.html') Shop
+                ul.dropdown
+                  li
+                    a(href='single.html') Single Shop
+              li
+                a(href='about.html') About
+              li.has-dropdown
+                a(href='services.html') Services
+                ul.dropdown
+                  li
+                    a(href='#') Web Design
+                  li
+                    a(href='#') eCommerce
+                  li
+                    a(href='#') Branding
+                  li
+                    a(href='#') API
+              li
+                a(href='contact.html') Contact
+          .col-md-3.col-xs-4.text-right.hidden-xs.menu-2
+            ul
+              li.search
+                .input-group
+                  input(type='text' placeholder='Search..')
+                  span.input-group-btn
+                    button.btn.btn-primary(type='button')
+                      i.icon-search
+              li.shopping-cart
+                a.cart(href='#')
+                  span
+                    small 0
+                    i.icon-shopping-cart
+    aside#fh5co-hero.js-fullheight
+      .flexslider.js-fullheight
+        ul.slides
+          li(style='background-image: url(images/img-bg1-alesia-kozik.jpg);')
+            .overlay-gradient
+            .container
+              .col-md-6.col-md-offset-3.col-md-pull-3.js-fullheight.slider-text
+                .slider-text-inner
+                  .desc
+                    span.price $800
+                    h2 Alato Cabinet
+                    p
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
+                    p
+                      a.btn.btn-primary.btn-outline.btn-lg(href='single.html') Purchase Now
+          li(style='background-image: url(images/img-bg2-teona-swift.jpg);')
+            .container
+              .col-md-6.col-md-offset-3.col-md-pull-3.js-fullheight.slider-text
+                .slider-text-inner
+                  .desc
+                    span.price $530
+                    h2 The Haluz Rocking Chair
+                    p
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
+                    p
+                      a.btn.btn-primary.btn-outline.btn-lg(href='single.html') Purchase Now
+          li(style='background-image: url(images/img-bg3-mareefe.jpg);')
+            .container
+              .col-md-6.col-md-offset-3.col-md-pull-3.js-fullheight.slider-text
+                .slider-text-inner
+                  .desc
+                    span.price $750
+                    h2 Alato Cabinet
+                    p
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
+                    p
+                      a.btn.btn-primary.btn-outline.btn-lg(href='single.html') Purchase Now
+          li(style='background-image: url(images/img-bg4-heather-bozman.jpg);')
+            .container
+              .col-md-6.col-md-offset-3.col-md-pull-3.js-fullheight.slider-text
+                .slider-text-inner
+                  .desc
+                    span.price $540
+                    h2 The WW Chair
+                    p
+                      | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
+                    p
+                      a.btn.btn-primary.btn-outline.btn-lg(href='single.html') Purchase Now
+    #fh5co-services.fh5co-bg-section
+      .container
+        .row
+          .col-md-4.col-sm-4.text-center
+            .feature-center.animate-box(data-animate-effect='fadeIn')
+              span.icon
+                i.icon-credit-card
+              h3 Credit Card
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+              p
+                a.btn.btn-primary.btn-outline(href='#') Learn More
+          .col-md-4.col-sm-4.text-center
+            .feature-center.animate-box(data-animate-effect='fadeIn')
+              span.icon
+                i.icon-wallet
+              h3 Save Money
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+              p
+                a.btn.btn-primary.btn-outline(href='#') Learn More
+          .col-md-4.col-sm-4.text-center
+            .feature-center.animate-box(data-animate-effect='fadeIn')
+              span.icon
+                i.icon-paper-plane
+              h3 Free Delivery
+              p
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+              p
+                a.btn.btn-primary.btn-outline(href='#') Learn More
+    #fh5co-product
+      .container
+        .row.animate-box
+          .col-md-8.col-md-offset-2.text-center.fh5co-heading
+            span Cool Stuff
+            h2 Products.
+            p
+              | Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.
+        .row
+          .col-md-4.text-center.animate-box
+            .product
+              .product-grid(style='background-image:url(images/producto1-valeria-boltneva.jpg);')
+                .inner
+                  p
+                    a.icon(href='single.html')
+                      i.icon-shopping-cart
+                    a.icon(href='single.html')
+                      i.icon-eye
+              .desc
+                h3
+                  a(href='single.html') Hauteville Concrete Rocking Chair
+                span.price $350
+          .col-md-4.text-center.animate-box
+            .product
+              .product-grid(style='background-image:url(images/producto2-brigitte-tohm.jpg);')
+                span.sale Sale
+                .inner
+                  p
+                    a.icon(href='single.html')
+                      i.icon-shopping-cart
+                    a.icon(href='single.html')
+                      i.icon-eye
+              .desc
+                h3
+                  a(href='single.html') Pavilion Speaker
+                span.price $600
+          .col-md-4.text-center.animate-box
+            .product
+              .product-grid(style='background-image:url(images/producto3-secret-garden.jpg);')
+                .inner
+                  p
+                    a.icon(href='single.html')
+                      i.icon-shopping-cart
+                    a.icon(href='single.html')
+                      i.icon-eye
+              .desc
+                h3
+                  a(href='single.html') Ligomancer
+                span.price $780
+        .row
+          .col-md-4.text-center.animate-box
+            .product
+              .product-grid(style='background-image:url(images/producto4-heather-bozman.jpg);')
+                .inner
+                  p
+                    a.icon(href='single.html')
+                      i.icon-shopping-cart
+                    a.icon(href='single.html')
+                      i.icon-eye
+              .desc
+                h3
+                  a(href='single.html') Alato Cabinet
+                span.price $800
+          .col-md-4.text-center.animate-box
+            .product
+              .product-grid(style='background-image:url(images/producto5-joyce-toh.jpg);')
+                .inner
+                  p
+                    a.icon(href='single.html')
+                      i.icon-shopping-cart
+                    a.icon(href='single.html')
+                      i.icon-eye
+              .desc
+                h3
+                  a(href='single.html') Earing Wireless
+                span.price $100
+          .col-md-4.text-center.animate-box
+            .product
+              .product-grid(style='background-image:url(images/producto6-kristina.jpg);')
+                .inner
+                  p
+                    a.icon(href='single.html')
+                      i.icon-shopping-cart
+                    a.icon(href='single.html')
+                      i.icon-eye
+              .desc
+                h3
+                  a(href='single.html') Sculptural Coffee Table
+                span.price $960
+    #fh5co-testimonial.fh5co-bg-section
+      .container
+        .row.animate-box
+          .col-md-8.col-md-offset-2.text-center.fh5co-heading
+            span Testimony
+            h2 Happy Clients
+        .row
+          .col-md-10.col-md-offset-1
+            .row.animate-box
+              .owl-carousel.owl-carousel-fullwidth
+                .item
+                  .testimony-slide.active.text-center
+                    figure
+                      img(src='images/person1-andrea-piacquadio.jpg' alt='user')
+                    span
+                      | Jean Doe, via 
+                      a.twitter(href='#') Twitter
+                    blockquote
+                      p
+                        | &ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;
+                .item
+                  .testimony-slide.active.text-center
+                    figure
+                      img(src='images/person2-pixabay.jpg' alt='user')
+                    span
+                      | John Doe, via 
+                      a.twitter(href='#') Twitter
+                    blockquote
+                      p
+                        | &ldquo;Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;
+                .item
+                  .testimony-slide.active.text-center
+                    figure
+                      img(src='images/person3-askar-abayev.jpg' alt='user')
+                    span
+                      | John Doe, via 
+                      a.twitter(href='#') Twitter
+                    blockquote
+                      p
+                        | &ldquo;Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;
+    #fh5co-counter.fh5co-bg.fh5co-counter(style='background-image:url(images/img_bg_5.jpg);')
+      .container
+        .row
+          .display-t
+            .display-tc
+              .col-md-3.col-sm-6.animate-box
+                .feature-center
+                  span.icon
+                    i.icon-eye
+                  span.counter.js-counter(data-from='0' data-to='22070' data-speed='5000' data-refresh-interval='50') 1
+                  span.counter-label Creativity Fuel
+              .col-md-3.col-sm-6.animate-box
+                .feature-center
+                  span.icon
+                    i.icon-shopping-cart
+                  span.counter.js-counter(data-from='0' data-to='450' data-speed='5000' data-refresh-interval='50') 1
+                  span.counter-label Happy Clients
+              .col-md-3.col-sm-6.animate-box
+                .feature-center
+                  span.icon
+                    i.icon-shop
+                  span.counter.js-counter(data-from='0' data-to='700' data-speed='5000' data-refresh-interval='50') 1
+                  span.counter-label All Products
+              .col-md-3.col-sm-6.animate-box
+                .feature-center
+                  span.icon
+                    i.icon-clock
+                  span.counter.js-counter(data-from='0' data-to='5605' data-speed='5000' data-refresh-interval='50') 1
+                  span.counter-label Hours Spent
+    #fh5co-started
+      .container
+        .row.animate-box
+          .col-md-8.col-md-offset-2.text-center.fh5co-heading
+            h2 Newsletter
+            p Just stay tune for our latest Product. Now you can subscribe
+        .row.animate-box
+          .col-md-8.col-md-offset-2
+            form.form-inline
+              .col-md-6.col-sm-6
+                .form-group
+                  label.sr-only(for='email') Email
+                  input#email.form-control(type='email' placeholder='Email')
+              .col-md-6.col-sm-6
+                button.btn.btn-default.btn-block(type='submit') Subscribe
+    footer#fh5co-footer(role='contentinfo')
+      .container
+        .row.row-pb-md
+          .col-md-4.fh5co-widget
+            h3 Shop.
+            p
+              | Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.
+          .col-md-2.col-sm-4.col-xs-6.col-md-push-1
+            ul.fh5co-footer-links
+              li
+                a(href='#') About
+              li
+                a(href='#') Help
+              li
+                a(href='#') Contact
+              li
+                a(href='#') Terms
+              li
+                a(href='#') Meetups
+          .col-md-2.col-sm-4.col-xs-6.col-md-push-1
+            ul.fh5co-footer-links
+              li
+                a(href='#') Shop
+              li
+                a(href='#') Privacy
+              li
+                a(href='#') Testimonials
+              li
+                a(href='#') Handbook
+              li
+                a(href='#') Held Desk
+          .col-md-2.col-sm-4.col-xs-6.col-md-push-1
+            ul.fh5co-footer-links
+              li
+                a(href='#') Find Designers
+              li
+                a(href='#') Find Developers
+              li
+                a(href='#') Teams
+              li
+                a(href='#') Advertise
+              li
+                a(href='#') API
+        .row.copyright
+          .col-md-12.text-center
+            p
+              small.block &copy; 2016 Free HTML5. All Rights Reserved.
+              small.block
+                | Designed by 
+                a(href='http://freehtml5.co/' target='_blank') FreeHTML5.co
+                |  Demo Images: 
+                a(href='http://blog.gessato.com/' target='_blank') Gessato
+                |  &amp; 
+                a(href='http://unsplash.co/' target='_blank') Unsplash
+            p
+              ul.fh5co-social-icons
+                li
+                  a(href='#')
+                    i.icon-twitter
+                li
+                  a(href='#')
+                    i.icon-facebook
+                li
+                  a(href='#')
+                    i.icon-linkedin
+                li
+                  a(href='#')
+                    i.icon-dribbble
+  .gototop.js-top
+    a.js-gotop(href='#')
+      i.icon-arrow-up
+  // jQuery
+  script(src='/javascripts/jquery.min.js')
+  // jQuery Easing
+  script(src='/javascripts/jquery.easing.1.3.js')
+  // Bootstrap
+  script(src='/javascripts/bootstrap.min.js')
+  // Waypoints
+  script(src='/javascripts/jquery.waypoints.min.js')
+  // Carousel
+  script(src='/javascripts/owl.carousel.min.js')
+  // countTo
+  script(src='/javascripts/jquery.countTo.js')
+  // Flexslider
+  script(src='/javascripts/jquery.flexslider-min.js')
+  // Main
+  script(src='/javascripts/main.js')

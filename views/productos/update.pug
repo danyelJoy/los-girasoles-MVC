@@ -1,0 +1,45 @@
+extends ../layout 
+
+block content
+  a(href='/productos') Volver 
+
+  br
+  br
+  br
+
+  h1 Modificar Producto 
+
+  br
+  br
+
+  form(action=`/productos/update ${producto.id}/update` method='post')
+  label(for='id') Id:
+  input#id(type="text" name='id' value=producto.id)
+  br
+  label(for='clave') Clave:
+  input#clave(type="text" name='clave' value=producto.clave)
+  br
+  label(for='tipo') Tipo:
+  input#tipo(type="text" name='tipo' value=producto.tipo)
+  br
+  label(for='color') Color:
+  input#color(type="text" name='color' value=producto.color)
+  br
+  label(for='precio') Precio:
+  input#precio(type="number" min='1' name='precio' step='2' value=producto.precio)
+  br
+  label(for='descripcion') Descripción:
+  input#descripcion(type="text" name='descripcion' value=producto.descripcion)
+  br
+  br
+  input.btn(type='submit' value='OK')
+
+
+
+
+
+
+
+
+
+  

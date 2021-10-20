@@ -1,0 +1,33 @@
+extends ../layout 
+
+block content
+  a(href='/productos') Volver 
+
+  br
+  br
+  br
+
+  h1 Nuevo Producto 
+
+  br
+  br
+
+  form(action='/productos/create' method='post')
+      label(for='clave') Clave:
+      input#clave(type="text" name="clave")
+      br
+      label(for='tipo') Tipo:
+      input#tipo(type="text" name="tipo")
+      br
+      label(for='color') Color:
+      input#color(type="text" name="color")
+      br
+      label(for='descripcion') Descripción:
+      input#descripcion(type="text" name="descripcion")
+      br
+      label(for='precio') Precio:
+      input#precio(type="number"  name="precio" step="2")
+      br
+      br
+      input.btn(type="submit" value='OK')
+

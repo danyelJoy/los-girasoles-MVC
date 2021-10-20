@@ -1,0 +1,37 @@
+extends ../layout 
+
+
+block content
+  a(href='/productos/create') Nuevo Producto
+  table.table 
+    thead 
+      tr 
+        th(scope='col') #id
+        th(scope='col') Clave
+        th(scope='col') tipo
+        th(scope='col') color
+        th(scope='col') descripcion
+        th(scope='col') precio
+        th(scope='col')
+    tbody 
+      each producto in productoLista
+        tr 
+           td(scope='row')
+            = producto.id
+            td= producto.clave
+            td= producto.tipo
+            td= producto.color      
+            td= producto.precio
+            td= producto.descripcion
+            td
+              a(href='/productos/update' + producto.id + 'update') Editar
+            td
+              form.inLine(method='post' action='/productos/delete' + producto.id)
+              input(type='hidden' name='id' value=producto.id)
+              button.link-button(type='submit' name='submit_param' value='submit_value' class='btn')
+                  = 'Eliminar'
+
+
+
+
+
